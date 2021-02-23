@@ -1,0 +1,5 @@
+colour = input("Enter your favourite colour").lower()
+if colour == "red":
+  print("Same")
+else:
+  print("i dont like" ,colour, "it is for loosers")
