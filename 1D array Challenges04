@@ -1,0 +1,15 @@
+Program = ["Pokemon", "National Geographic", "David Attenborough Special Episode"]
+
+for i in Program:
+    print(i)
+
+print(Program)
+
+show = str(input("Enter another show "))
+location = int(input("Enter a location between 0 and 3"))
+
+Program.insert(location, show)
+
+for i in Program:
+  
+    print(i)
