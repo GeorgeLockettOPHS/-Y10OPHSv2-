@@ -4,7 +4,7 @@ count = 0
 while True:
     NewNumber = int(input("Enter a number "))
     nums.append(NewNumber)
-    count += 1
+    count = count + 1
 
     if count == 3:
         delete = input("Keep last number? y or n >>> ").lower()
