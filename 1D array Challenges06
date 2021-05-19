@@ -1,0 +1,18 @@
+nums = []
+count = 0
+
+while True:
+    NewNumber = int(input("Enter a number "))
+    nums.append(NewNumber)
+    count += 1
+
+    if count == 3:
+        delete = input("Keep last number? y or n >>> ").lower()
+
+        if delete == "n":
+            nums.remove(nums[-1])
+            break
+
+        else:
+            break
+print(nums)
