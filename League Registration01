@@ -17,4 +17,5 @@ while not correct:
     if info != "y":
         correct = False
     else:
-        break
+        print("Many thanks:)")
+        break                                                                                                                                                                                                                                                                                                                                                     
