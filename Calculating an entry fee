@@ -4,24 +4,23 @@ price = 10
 
 while not correct:
     Email = input("Enter email address >>> ")
-    Skill = input("Enter your skill level : E for expert and C for casual >>> ")
-    country = input("Enter Country UK/US/AU \n").upper
+    Skill = input("Enter your skill level : E for expert and C for casual >>> ").upper()
+    country = input("Enter Country UK/US/AU \n").upper()
     if Skill == "E":
-        price += 35
+        price += 35 #Experts pay an extra £35
         correct = True
-    else:
-        price += 20
+    elif Skill == "C":
+        price += 20 #Casuals pay an extra £20
         correct = True
     if country == "US":
-        price *= 1.5
+        price *= 1.5 #times price to make it into $
     elif country == "AU":
-        price *= 2
+        price *= 2 #times price to make it into A$
 
-        break
-print(price)
-another = input("Do you want to enter another fee? y or n").lower()
+    print("Your price is", price)
+    another = input("Do you want to enter another fee? y or n >>>").lower()
 
-if another == "n":
-    correct = True
-else:
-    correct == False
+    if another == "y":
+        correct = False
+    else:
+        correct == True
