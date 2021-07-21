@@ -3,7 +3,6 @@ correct = False
 
 while not correct:
     FirstName = input("Enter your first name >>> ")
-    LastName = input("Enter your last name >>> ")
     NickName = input("Enter your nickname >>> ")
     Email = input("Enter your e-mail adress >>> ")
     Skill = str(input("Enter your skill level : E for expert and C for casual >>> ")).upper()
@@ -12,7 +11,7 @@ while not correct:
         Skill = "Expert"
     else:
         Skill = "Casual"
-    print("Your first name is ", FirstName, "Your last name is ", LastName, "Your nickname is ", NickName, "Your e-mail is ", Email, "Your Skill level is", Skill)
+    print("Your first name is ", FirstName, "Your nickname is ", NickName, "Your e-mail is ", Email, "Your Skill level is", Skill)
     info = input("Are these details correct? Anser with a y or n >>>").lower()
     if info != "y":
         correct = False
