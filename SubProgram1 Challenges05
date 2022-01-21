@@ -1,0 +1,41 @@
+def option1():
+  print("This is THINK BIG\n")
+
+def option2():
+  print("This is THINK BIGGER\n")
+
+def option3():
+  print("This is WINNING\n")
+def option4():
+    print("WINNER")
+def option5():
+    print("EXIT")
+def main():
+    print("Press 1 for THINK BIG")
+    print("Press 2 for THINK BIGGER")
+    print("Press 3 for WINNING")
+    print("Press 4 for WINNER")
+    print("Press 5 for EXIT")
+    
+    choice = int(input("Enter 1, 2, 3, 4 or 5 to exit\n"))
+    
+    if choice == 5:
+      print("exiting...") 
+      
+    elif choice == 1:
+      print("THINK BIG chosen\n")
+      option1()
+      
+    elif choice == 2:
+      print("Think bigger chosen\n")
+      option2()
+      
+    elif choice == 3:
+      print("winning chosen\n")
+      option3()
+    elif choice == 4:
+        print("winner")
+    else:
+      print("please try again\n")
+      main()    
+main()
